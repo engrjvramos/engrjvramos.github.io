@@ -1,16 +1,14 @@
 .about {
 	min-height: 100vh;
-	@include flexCenter;
-	flex-direction: column;
+	padding-top: 10rem;
 	background: var(--white);
 
 	.container {
-		@include flexCenter;
+		display: flex;
 		flex-direction: column;
 		max-width: 120rem;
 		margin: 0 auto;
 		width: 100%;
-		gap: 5rem;
 		padding: 0 5rem;
 
 		.content {
@@ -23,9 +21,10 @@
 					font-weight: 600;
 				}
 
-				p:last-of-type {
-					margin-bottom: 2.5rem;
+				p {
+					margin-bottom: 2rem;
 				}
+
 				a {
 					color: var(--color-primary);
 					font-weight: 500;

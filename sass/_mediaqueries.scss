@@ -1,0 +1,27 @@
+@media only screen and (max-width: 768px) {
+	.projects {
+		.container {
+			.content {
+				.project {
+					gap: 2rem;
+
+					&__img {
+						order: -1;
+					}
+
+					&__details {
+						h2 {
+							font-size: 2.1rem;
+						}
+
+						.technologies {
+							span {
+								font-size: 1.1rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
