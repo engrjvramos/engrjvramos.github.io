@@ -1,86 +1,37 @@
-@mixin btn-draw($color, $color-hov, $width: 1px, $padding: 0.5em, $time: 0.2s) {
-	position: relative;
-
-	display: inline-block;
-
-	color: $color;
-	border-bottom: $width solid $color;
+@mixin btnDefault {
+	font-family: inherit;
+	font-size: 1.6rem;
+	line-height: 1.2;
+	text-align: center;
+	padding: 1.3rem 3.2rem;
+	border: 2px solid var(--color-primary);
+	outline: none;
+	transition: all 0.3s;
 	cursor: pointer;
-	overflow: hidden;
-	transition: color $time ease-in-out, background-color $time ease-in-out;
+}
 
-	&:after {
-		content: '';
-		position: absolute;
-		right: 0;
-		bottom: 0;
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-		height: 100%;
-		width: $width;
-
-		background: $color;
-		transform: translateY(100%);
-		transition: transform $time ease-in-out;
-		transition-delay: $time * 3;
+@keyframes blink {
+	50% {
+		border-color: transparent;
 	}
+}
 
-	> span {
-		position: relative;
-
-		display: block;
-		padding: $padding;
-
-		color: inherit;
-
-		&:before,
-		&:after {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-
-			background: $color;
-			transition: transform $time ease-in-out;
-		}
-
-		&:before {
-			height: $width;
-			width: 100%;
-
-			transform: translateX(100%);
-			transition-delay: $time * 2;
-		}
-
-		&:after {
-			height: 100%;
-			width: $width;
-
-			transform: translateY(-100%);
-			transition-delay: $time;
-		}
+@keyframes sdb05 {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+		opacity: 0;
 	}
-
-	&:hover:after,
-	&:hover > span:before,
-	&:hover > span:after {
-		transform: translate(0, 0);
+	50% {
+		opacity: 1;
 	}
-
-	&:hover:after {
-		transition-delay: 0s;
-	}
-
-	&:hover > span:before {
-		transition-delay: $time;
-	}
-
-	&:hover > span:after {
-		transition-delay: $time * 2;
-	}
-
-	&:hover {
-		color: $color-hov;
-		background-color: $color;
-		transition-delay: $time * 3;
+	100% {
+		transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0;
 	}
 }

@@ -1,0 +1,162 @@
+.navbar {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5rem;
+	width: 100%;
+	margin: 0 auto;
+	height: 6rem;
+	z-index: 999;
+	border-bottom: 1px solid var(--neutral-100);
+	background: var(--white);
+
+	.logo {
+		font-size: 2.7rem;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		font-weight: 700;
+		border: 2px solid var(--color-primary);
+		padding: 0 3px;
+		background: var(--color-primary);
+		text-align: center;
+		line-height: 4rem;
+		cursor: pointer;
+
+		a {
+			color: var(--white);
+		}
+	}
+
+	.nav-items {
+		a {
+			position: relative;
+			color: var(--neutral-500);
+			transition: all 0.3s;
+
+			&:not(:last-child) {
+				margin-right: 4rem;
+			}
+
+			&:hover {
+				color: var(--neural-900);
+			}
+		}
+
+		a.active {
+			color: var(--neural-900);
+		}
+	}
+
+	.theme-btn {
+		@include flexCenter;
+		font-size: 1.8rem;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&:hover {
+			background: var(--neutral-100);
+		}
+
+		&:active {
+			background: var(--neutral-200);
+		}
+
+		.fa-sun,
+		&.sun .fa-moon {
+			display: none;
+		}
+
+		&.sun .fa-sun {
+			display: block;
+		}
+	}
+}
+
+.home {
+	min-height: 100vh;
+	@include flexCenter;
+	flex-direction: column;
+	text-align: center;
+	background: var(--white);
+
+	.container {
+		width: 100%;
+		max-width: 150rem;
+		h1 {
+			font-size: 5rem;
+			font-weight: 600;
+			color: var(--neutral-900);
+			margin-bottom: 5px;
+		}
+
+		.txt-type {
+			height: 4rem;
+			span {
+				font-size: 2.5rem;
+				font-weight: 500;
+				color: var(--neutral-500);
+				border-right: 1px solid var(--neutral-200);
+				animation: blink 0.5s step-end infinite alternate;
+			}
+		}
+
+		.divider {
+			width: 30rem;
+			height: 1px;
+			background: var(--neutral-100);
+			margin: 5rem auto;
+		}
+
+		.social-links {
+			font-size: 3rem;
+			i {
+				cursor: pointer;
+				transition: all 0.3s;
+
+				&:not(:last-child) {
+					margin-right: 2rem;
+				}
+
+				&:hover {
+					color: var(--color-primary);
+				}
+			}
+		}
+	}
+
+	.scroll-down {
+		position: absolute;
+		bottom: 3rem;
+		a {
+			padding-top: 7rem;
+			position: relative;
+			color: var(--neutral-500);
+			font-weight: 500;
+			transition: all 0.3s;
+
+			span {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 24px;
+				height: 24px;
+				margin-left: -12px;
+				border-left: 1px solid var(--neutral-600);
+				border-bottom: 1px solid var(--neutral-600);
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-animation: sdb05 1.5s infinite;
+				animation: sdb05 1.5s infinite;
+			}
+
+			&:hover {
+				color: var(--neutral-900);
+			}
+		}
+	}
+}
