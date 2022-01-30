@@ -114,13 +114,17 @@
 
 		.social-links {
 			font-size: 3rem;
-			i {
-				cursor: pointer;
-				transition: all 0.3s;
 
+			a {
+				color: var(--black);
 				&:not(:last-child) {
 					margin-right: 2rem;
 				}
+			}
+
+			i {
+				cursor: pointer;
+				transition: all 0.3s;
 
 				&:hover {
 					color: var(--color-primary);
