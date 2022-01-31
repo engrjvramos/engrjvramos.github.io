@@ -2,6 +2,7 @@
 	min-height: 100vh;
 	background: var(--white);
 	padding-top: 10rem;
+	background: var(--body-bg-color);
 
 	.container {
 		@include flexCenter;
@@ -9,7 +10,7 @@
 		max-width: 120rem;
 		margin: 0 auto;
 		width: 100%;
-		gap: 5rem;
+		gap: 2rem;
 		padding: 0 5rem;
 
 		.content {
@@ -18,13 +19,17 @@
 			justify-content: space-between;
 			align-items: flex-start;
 			flex-wrap: wrap;
-			gap: 6rem;
+			gap: 8rem;
 
 			.form-container {
-				flex: 1 1 30rem;
-				h3 {
-					font-size: 1.8rem;
+				flex: 1 1 40rem;
+
+				h2 {
+					font-size: 3rem;
 					font-weight: 500;
+				}
+
+				p {
 					margin-bottom: 2rem;
 				}
 
@@ -61,7 +66,7 @@
 			}
 
 			.contact-details {
-				flex: 1 1 30rem;
+				flex: 1 1 20rem;
 				align-self: stretch;
 				margin-bottom: 4rem;
 
@@ -88,7 +93,7 @@
 							border-radius: 50%;
 							border: 1px solid var(--neutral-200);
 							background: var(--neutral-050);
-							color: var(--black);
+							color: var(--black-n-white-1);
 						}
 
 						.details {

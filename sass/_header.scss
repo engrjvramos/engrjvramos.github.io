@@ -9,22 +9,39 @@
 	height: 6rem;
 	z-index: 999;
 	border-bottom: 1px solid var(--neutral-100);
-	background: var(--white);
+	background: var(--navbar-bg-color);
 
 	.logo {
-		font-size: 2.5rem;
-		width: 4rem;
-		height: 4rem;
-		border-radius: 50%;
-		font-weight: 700;
-		border: 2px solid var(--color-primary);
-		padding: 0 3px;
-		background: var(--color-primary);
-		@include flexCenter;
-		cursor: pointer;
-		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+
+		&__icon {
+			font-family: 'Raleway', sans-serif;
+			font-size: 2.5rem;
+			width: 4rem;
+			height: 4rem;
+			border-radius: 50%;
+			font-weight: 700;
+			border: 2px solid var(--color-primary);
+			padding: 0 3px;
+			margin-right: 1rem;
+			background: var(--color-primary);
+			@include flexCenter;
+			cursor: pointer;
+			flex-shrink: 0;
+		}
 		a {
-			color: var(--white);
+			color: #fff;
+		}
+
+		h1 {
+			font-size: 2rem;
+			font-weight: 400;
+			letter-spacing: 1px;
+
+			span {
+				font-weight: 600;
+			}
 		}
 	}
 
@@ -32,7 +49,7 @@
 		a {
 			font-size: 1.8rem;
 			position: relative;
-			color: var(--neutral-500);
+			color: var(--body-text-color);
 			transition: all 0.3s;
 
 			&:not(:last-child) {
@@ -40,25 +57,26 @@
 			}
 
 			&:hover {
-				color: var(--neural-900);
+				color: var(--color-primary);
 			}
 		}
 
 		a.active {
-			color: var(--black);
+			color: var(--black-n-white-1);
 			font-weight: 500;
 		}
 	}
 
 	.theme-btn {
 		@include flexCenter;
-		font-size: 1.8rem;
-		width: 4rem;
-		height: 4rem;
+		font-size: 2rem;
+		width: 4.5rem;
+		height: 4.5rem;
 		border-radius: 50%;
 		cursor: pointer;
 		transition: all 0.3s;
 		flex-shrink: 0;
+		color: var(--black-n-white-1);
 
 		&:hover {
 			background: var(--neutral-100);
@@ -92,7 +110,7 @@
 			width: 3rem;
 			height: 3px;
 			border-radius: 10rem;
-			background: var(--black);
+			background: var(--black-n-white-1);
 			transition: all 0.3s ease;
 
 			&::before,
@@ -102,7 +120,7 @@
 				width: 3rem;
 				height: 3px;
 				border-radius: 10rem;
-				background: var(--black);
+				background: var(--black-n-white-1);
 				transition: all 0.3s ease;
 			}
 
@@ -142,7 +160,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: var(--white);
+	background: var(--navbar-bg-color);
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 	transform: translateX(20rem);
 	visibility: hidden;
@@ -171,14 +189,14 @@
 			}
 
 			&:hover {
-				color: var(--black);
+				color: var(--color-primary);
 				border-left: 3px solid var(--neutral-500);
 				background: var(--neutral-050);
 			}
 		}
 
 		a.active {
-			color: var(--black);
+			color: var(--black-n-white-1);
 			font-weight: 500;
 			border-left: 3px solid var(--color-primary);
 		}
@@ -196,12 +214,21 @@
 	@include flexCenter;
 	flex-direction: column;
 	text-align: center;
-	background: var(--white);
+	background: var(--black-n-white-2);
 	position: relative;
 
 	.container {
 		width: 100%;
 		max-width: 150rem;
+
+		h2 {
+			font-family: 'Raleway', sans-serif;
+			margin-bottom: 6rem;
+			text-transform: lowercase;
+			font-weight: 500;
+			font-size: 10rem;
+			letter-spacing: 5px;
+		}
 
 		h1 {
 			font-size: 4rem;
@@ -229,11 +256,7 @@
 
 		.social-links {
 			font-size: 3rem;
-			position: absolute;
-			bottom: 20rem;
-			left: 50%;
-			transform: translateX(-50%);
-
+			width: 100%;
 			a {
 				color: var(--black);
 				&:not(:last-child) {
@@ -242,6 +265,7 @@
 			}
 
 			i {
+				color: var(--black-n-white-1);
 				cursor: pointer;
 				transition: all 0.3s;
 
@@ -254,7 +278,7 @@
 
 	.scroll-down {
 		position: absolute;
-		bottom: 3rem;
+		bottom: 6rem;
 		a {
 			padding-top: 7rem;
 			position: relative;
