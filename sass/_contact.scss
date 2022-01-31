@@ -39,7 +39,7 @@
 					textarea {
 						width: 100%;
 						color: var(--neutral-500);
-						background: var(--white);
+						background: var(--black-n-white-2);
 						font-family: inherit;
 						outline: none;
 						border: 2px solid var(--neutral-200);
@@ -61,6 +61,7 @@
 
 					textarea {
 						resize: none;
+						font-weight: 400;
 					}
 				}
 			}
@@ -92,7 +93,7 @@
 							text-align: center;
 							border-radius: 50%;
 							border: 1px solid var(--neutral-200);
-							background: var(--neutral-050);
+							background: var(--black-n-white-2);
 							color: var(--black-n-white-1);
 						}
 
