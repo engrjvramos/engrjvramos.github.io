@@ -1,0 +1,121 @@
+.contact {
+	min-height: 100vh;
+	background: var(--white);
+	padding-top: 10rem;
+
+	.container {
+		@include flexCenter;
+		flex-direction: column;
+		max-width: 120rem;
+		margin: 0 auto;
+		width: 100%;
+		gap: 5rem;
+		padding: 0 5rem;
+
+		.content {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			gap: 6rem;
+
+			.form-container {
+				flex: 1 1 30rem;
+				h3 {
+					font-size: 1.8rem;
+					font-weight: 500;
+					margin-bottom: 2rem;
+				}
+
+				.contact-form {
+					margin-top: 1rem;
+					input,
+					textarea {
+						width: 100%;
+						color: var(--neutral-500);
+						background: var(--white);
+						font-family: inherit;
+						outline: none;
+						border: 2px solid var(--neutral-200);
+						border-radius: 5px;
+						padding: 1rem;
+						margin-bottom: 1.5rem;
+						font-size: 1.6rem;
+						font-weight: 500;
+
+						&:focus {
+							border: 2px solid var(--color-primary);
+						}
+					}
+
+					::placeholder {
+						font-weight: 300;
+						color: var(--neutral-400);
+					}
+
+					textarea {
+						resize: none;
+					}
+				}
+			}
+
+			.contact-details {
+				flex: 1 1 30rem;
+				align-self: stretch;
+
+				h2 {
+					font-size: 3rem;
+					font-weight: 500;
+				}
+
+				.contact-list {
+					margin: 1.5rem 0;
+					.item-title {
+						display: flex;
+						align-items: center;
+						margin-bottom: 3rem;
+
+						i {
+							margin-right: 2rem;
+							font-size: 1.8rem;
+							width: 5rem;
+							height: 5rem;
+							line-height: 5rem;
+							text-align: center;
+							border-radius: 50%;
+							border: 1px solid var(--neutral-200);
+							background: var(--neutral-050);
+							color: var(--black);
+						}
+
+						.details {
+							h5 {
+								font-size: 1.8rem;
+							}
+
+							a,
+							p {
+								color: var(--neutral-500);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	.copyright {
+		text-align: center;
+		padding: 2rem 0;
+		p {
+			font-size: 1.4rem;
+
+			span {
+				font-weight: 600;
+			}
+		}
+	}
+}

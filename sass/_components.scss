@@ -1,0 +1,30 @@
+.scrollToTop-btn {
+	@include flexCenter;
+	z-index: 99999;
+	position: fixed;
+	right: 0;
+	bottom: 2rem;
+	width: 4.5rem;
+	height: 4.5rem;
+	border: 1px solid var(--color-primary);
+	background: var(--white);
+	color: var(--black);
+	cursor: pointer;
+	opacity: 0;
+	transition: all 0.3s;
+
+	i {
+		font-size: 2rem;
+	}
+
+	&:hover {
+		background: var(--color-primary);
+		color: var(--white);
+	}
+}
+
+.scrollToTop-btn.active {
+	right: 2rem;
+	pointer-events: all;
+	opacity: 1;
+}

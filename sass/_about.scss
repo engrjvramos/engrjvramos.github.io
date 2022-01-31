@@ -10,6 +10,7 @@
 		margin: 0 auto;
 		width: 100%;
 		padding: 0 5rem;
+		gap: 5rem;
 
 		.content {
 			@include flexCenter;
@@ -32,6 +33,7 @@
 			}
 
 			&__skills {
+				margin-top: 2rem;
 				h2 {
 					font-weight: 600;
 				}
