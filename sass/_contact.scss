@@ -63,6 +63,7 @@
 			.contact-details {
 				flex: 1 1 30rem;
 				align-self: stretch;
+				margin-bottom: 4rem;
 
 				h2 {
 					font-size: 3rem;
@@ -71,10 +72,11 @@
 
 				.contact-list {
 					margin: 1.5rem 0;
+
 					.item-title {
 						display: flex;
 						align-items: center;
-						margin-bottom: 3rem;
+						margin-bottom: 5rem;
 
 						i {
 							margin-right: 2rem;

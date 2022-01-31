@@ -12,16 +12,15 @@
 	background: var(--white);
 
 	.logo {
-		font-size: 2.7rem;
-		width: 40px;
-		height: 40px;
+		font-size: 2.5rem;
+		width: 4rem;
+		height: 4rem;
 		border-radius: 50%;
 		font-weight: 700;
 		border: 2px solid var(--color-primary);
 		padding: 0 3px;
 		background: var(--color-primary);
-		text-align: center;
-		line-height: 40px;
+		@include flexCenter;
 		cursor: pointer;
 		flex-shrink: 0;
 		a {
@@ -31,6 +30,7 @@
 
 	.nav-items {
 		a {
+			font-size: 1.8rem;
 			position: relative;
 			color: var(--neutral-500);
 			transition: all 0.3s;
@@ -45,7 +45,8 @@
 		}
 
 		a.active {
-			color: var(--neural-900);
+			color: var(--black);
+			font-weight: 500;
 		}
 	}
 
@@ -57,6 +58,7 @@
 		border-radius: 50%;
 		cursor: pointer;
 		transition: all 0.3s;
+		flex-shrink: 0;
 
 		&:hover {
 			background: var(--neutral-100);
@@ -75,6 +77,118 @@
 			display: block;
 		}
 	}
+
+	.menu-btn {
+		position: relative;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 4rem;
+		height: 4rem;
+		cursor: pointer;
+
+		.burger {
+			width: 3rem;
+			height: 3px;
+			border-radius: 10rem;
+			background: var(--black);
+			transition: all 0.3s ease;
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				width: 3rem;
+				height: 3px;
+				border-radius: 10rem;
+				background: var(--black);
+				transition: all 0.3s ease;
+			}
+
+			&::before {
+				transform: translateY(-0.9rem);
+			}
+
+			&::after {
+				transform: translateY(0.9rem);
+			}
+		}
+
+		&.open {
+			.burger {
+				transform: translateX(-5rem);
+				background: transparent;
+
+				&::before {
+					transform: rotate(45deg) translate(3.5rem, -3.5rem);
+				}
+
+				&::after {
+					transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+				}
+			}
+		}
+	}
+}
+
+.sidebar {
+	position: fixed;
+	width: 30rem;
+	top: 6rem;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: var(--white);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+	transform: translateX(20rem);
+	visibility: hidden;
+	opacity: 0;
+	z-index: 99999;
+	transition: all 0.3s;
+
+	.nav-items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		width: 100%;
+		transition: all 0.3s;
+
+		a {
+			font-size: 1.8rem;
+			color: var(--neutral-500);
+			width: 100%;
+			text-align: center;
+			padding: 3rem 0;
+
+			&:not(:last-child) {
+				margin-bottom: 4rem;
+			}
+
+			&:hover {
+				color: var(--black);
+				border-left: 3px solid var(--neutral-500);
+				background: var(--neutral-050);
+			}
+		}
+
+		a.active {
+			color: var(--black);
+			font-weight: 500;
+			border-left: 3px solid var(--color-primary);
+		}
+	}
+
+	&.active {
+		transform: translateX(0);
+		visibility: visible;
+		opacity: 1;
+	}
 }
 
 .home {
@@ -83,12 +197,14 @@
 	flex-direction: column;
 	text-align: center;
 	background: var(--white);
+	position: relative;
 
 	.container {
 		width: 100%;
 		max-width: 150rem;
+
 		h1 {
-			font-size: 5rem;
+			font-size: 4rem;
 			font-weight: 600;
 			color: var(--neutral-900);
 			margin-bottom: 5px;
@@ -105,15 +221,18 @@
 			}
 		}
 
-		.divider {
-			width: 30rem;
-			height: 1px;
-			background: var(--neutral-100);
-			margin: 5rem auto;
+		a {
+			display: inline-block;
+			margin-top: 7rem;
+			text-transform: capitalize;
 		}
 
 		.social-links {
 			font-size: 3rem;
+			position: absolute;
+			bottom: 20rem;
+			left: 50%;
+			transform: translateX(-50%);
 
 			a {
 				color: var(--black);

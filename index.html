@@ -30,7 +30,7 @@
       <a href="">J</a>
     </div>
     <div class="nav-items">
-      <a href="#home" class="active">Home</a>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -39,14 +39,27 @@
       <i class="fas fa-sun"></i>
       <i class="fas fa-moon"></i>
     </div>
+    <div class="menu-btn">
+      <div class="burger"></div>
+    </div>
   </nav>
 
+  <div class="sidebar">
+    <div class="nav-items">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+
   <!--======= HOME SECTION =======-->
-  <section id="home" class="home">
+  <section id="home" class="home section">
     <div class="container">
       <h1>Jose Roberto V. Ramos</h1>
       <div class="txt-type" data-wait="3000" data-words='["Web&nbsp;Developer", "Civil&nbsp;Engineer"]'></div>
-      <div class="divider"></div>
+      <a href="#contact" class="btn-primary">Hire Me</a>
       <div class="social-links">
         <a href="https://www.facebook.com/jobie.ramos/" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://github.com/engrjvramos" target="_blank"><i class="fab fa-github"></i></a>
@@ -62,7 +75,7 @@
   </section>
 
   <!--======= ABOUT SECTION =======-->
-  <section id="about" class="about">
+  <section id="about" class="about section">
     <div class="container">
       <div class="section-title">
         <h1>About Me</h1>
@@ -90,7 +103,8 @@
           </p>
           <p>
           </p>
-          <button class="btn-primary"><i class="fas fa-file-download"></i>Download CV</button>
+          <a href="/docs/jose-ramos-resume-a4.pdf" class="btn-primary" target="_blank"><i
+              class="fas fa-file-download"></i>Download CV</a>
         </div>
         <div class="content__skills">
           <h2>Skills</h2>
@@ -151,7 +165,7 @@
   </section>
 
   <!--======= PROJECTS SECTION =======-->
-  <section id="projects" class="projects">
+  <section id="projects" class="projects section">
     <div class="container">
       <div class="section-title">
         <h1>My Projects</h1>
@@ -223,7 +237,7 @@
   </section>
 
   <!--======= CONTACT SECTION =======-->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact section">
     <div class="container">
       <div class="section-title">
         <h1>Contact Me</h1>
@@ -276,7 +290,9 @@
               </div>
             </div>
           </div>
-          <a class="mailtoui"><button class="btn-primary"><i class='fas fa-message'></i>Let's Talk</button></a></button>
+          <a class="mailtoui btn-primary"><i class='fas fa-message'></i>Let's Talk</button></a>
+          <a href="/docs/jose-ramos-resume-a4.pdf" class="btn-secondary" target="_blank"><i
+              class="fas fa-file-download"></i>Download CV</a>
         </div>
       </div>
     </div>
@@ -285,7 +301,8 @@
   <!--======= FOOTER =======-->
   <footer>
     <div class="copyright">
-      <p>Copyright 2022 | Designed and coded by <span>Jose Ramos</span>. All rights reserved.</p>
+      <p>&copy; Copyright 2022 | Designed and coded by <span>Jose Ramos</span>.</p>
+      <p>All rights reserved.</p>
     </div>
   </footer>
 

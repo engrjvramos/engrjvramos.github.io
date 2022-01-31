@@ -24,11 +24,15 @@
 
 				p {
 					margin-bottom: 2rem;
+
+					a {
+						color: var(--color-primary);
+						font-weight: 500;
+					}
 				}
 
 				a {
-					color: var(--color-primary);
-					font-weight: 500;
+					display: inline-block;
 				}
 			}
 
