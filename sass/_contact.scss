@@ -2,6 +2,7 @@
 	min-height: 100vh;
 	background: var(--white);
 	padding-top: 10rem;
+	padding-bottom: 10rem;
 	background: var(--body-bg-color);
 
 	.container {
@@ -115,11 +116,36 @@
 }
 
 footer {
+	padding: 5rem 10rem;
+	border-top: 1px solid var(--neutral-200);
+	text-align: center;
+
+	.social-links {
+		font-size: 2.5rem;
+		width: 100%;
+		margin-bottom: 2.5rem;
+
+		a {
+			color: var(--black);
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
+		}
+
+		i {
+			color: var(--black-n-white-1);
+			cursor: pointer;
+			transition: all 0.3s;
+
+			&:hover {
+				color: var(--color-primary);
+			}
+		}
+	}
+
 	.copyright {
-		text-align: center;
-		padding: 2rem 0;
 		p {
-			font-size: 1.4rem;
+			font-size: 1.5rem;
 
 			span {
 				font-weight: 600;
