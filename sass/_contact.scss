@@ -192,6 +192,7 @@ footer {
 
 		.lower {
 			padding-top: 4rem;
+			width: 100%;
 
 			.copyright {
 				p {
@@ -201,6 +202,22 @@ footer {
 					a {
 						font-weight: 600;
 						text-transform: uppercase;
+						position: relative;
+						mask-image: linear-gradient(
+							-75deg,
+							rgba(0, 0, 0, 0.6) 30%,
+							#000 50%,
+							rgba(0, 0, 0, 0.6) 70%
+						);
+						-webkit-mask-image: linear-gradient(
+							-75deg,
+							rgba(0, 0, 0, 0.6) 30%,
+							#000 50%,
+							rgba(0, 0, 0, 0.6) 70%
+						);
+						mask-size: 200%;
+						-webkit-mask-size: 200%;
+						animation: shine 4s linear infinite;
 					}
 
 					&::before {

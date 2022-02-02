@@ -41,7 +41,6 @@
 			h1 {
 				font-size: 2rem;
 				font-weight: 400;
-				letter-spacing: 1px;
 
 				span {
 					font-weight: 600;
@@ -249,10 +248,29 @@
 		}
 
 		h1 {
+			font-family: 'Raleway', sans-serif;
 			font-size: 4rem;
 			font-weight: 400;
-			color: var(--neutral-900);
+			color: var(--black-n-white-1);
+			text-transform: uppercase;
+			letter-spacing: 3px;
 			margin-bottom: 5px;
+			position: relative;
+			mask-image: linear-gradient(
+				-75deg,
+				rgba(0, 0, 0, 0.6) 30%,
+				#000 50%,
+				rgba(0, 0, 0, 0.6) 70%
+			);
+			-webkit-mask-image: linear-gradient(
+				-75deg,
+				rgba(0, 0, 0, 0.6) 30%,
+				#000 50%,
+				rgba(0, 0, 0, 0.6) 70%
+			);
+			mask-size: 200%;
+			-webkit-mask-size: 200%;
+			animation: shine 3s linear infinite;
 		}
 
 		.txt-type {

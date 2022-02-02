@@ -29,9 +29,14 @@
 				p {
 					margin-bottom: 2rem;
 
+					&:last-of-type {
+						margin-bottom: 3rem;
+					}
+
 					a {
 						color: var(--color-primary);
 						font-weight: 500;
+						display: inline;
 					}
 
 					span {

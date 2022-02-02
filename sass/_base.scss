@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	transition: background 0.3s ease;
 }
 
 :root {
@@ -193,7 +194,7 @@ li {
 
 	&:hover {
 		background: #d5d5d5;
-		color: var(--black-n-white-1);
+		color: var(--black-n-white-2);
 	}
 
 	&:focus {
@@ -224,6 +225,7 @@ li {
 
 	h2 {
 		text-transform: lowercase;
+		color: var(--neutral-600);
 	}
 
 	span {
