@@ -9,22 +9,22 @@
 		font-size: 54.5%;
 	}
 	.navbar {
-		padding: 0 3rem;
+		.container {
+			.logo {
+				margin-right: auto;
+			}
 
-		.logo {
-			margin-right: auto;
-		}
+			.nav-items {
+				display: none;
+			}
 
-		.nav-items {
-			display: none;
-		}
+			.theme-btn {
+				margin-right: 2rem;
+			}
 
-		.theme-btn {
-			margin-right: 2rem;
-		}
-
-		.menu-btn {
-			display: flex;
+			.menu-btn {
+				display: flex;
+			}
 		}
 	}
 
@@ -49,10 +49,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-	.navbar {
-		padding: 0 2.5rem;
-	}
-
 	.projects {
 		.container {
 			.content {
@@ -64,15 +60,23 @@
 			}
 		}
 	}
+
+	footer {
+		.container {
+			.upper {
+				flex-direction: column;
+
+				.nav-items {
+					margin-bottom: 2rem;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 576px) {
 	html {
 		font-size: 50%;
-	}
-
-	.navbar {
-		padding: 0 2rem;
 	}
 
 	.section-title {
