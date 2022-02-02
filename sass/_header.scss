@@ -20,7 +20,6 @@
 			align-items: center;
 
 			&__icon {
-				font-family: 'Raleway', sans-serif;
 				font-size: 2.5rem;
 				width: 4rem;
 				height: 4rem;
@@ -233,10 +232,11 @@
 	flex-direction: column;
 	text-align: center;
 	background: var(--black-n-white-2);
+	padding: 0 5rem;
 
 	.container {
 		width: 100%;
-		max-width: 150rem;
+		max-width: 120rem;
 
 		h2 {
 			font-family: 'Raleway', sans-serif;
@@ -248,9 +248,8 @@
 		}
 
 		h1 {
-			font-family: 'Raleway', sans-serif;
 			font-size: 4rem;
-			font-weight: 400;
+			font-weight: 700;
 			color: var(--black-n-white-1);
 			text-transform: uppercase;
 			letter-spacing: 3px;
@@ -270,7 +269,7 @@
 			);
 			mask-size: 200%;
 			-webkit-mask-size: 200%;
-			animation: shine 3s linear infinite;
+			animation: shine 5s linear infinite;
 		}
 
 		.txt-type {
