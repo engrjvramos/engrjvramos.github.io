@@ -40,7 +40,7 @@ themeBtn.addEventListener('click', () => {
 const getCurrentTheme = () =>
 	document.body.classList.contains('dark-theme') ? 'dark' : 'light';
 const getCurrentIcon = () =>
-	themeBtn.body.classList.contains('sun') ? 'sun' : 'moon';
+	themeBtn.classList.contains('sun') ? 'sun' : 'moon';
 
 const savedTheme = localStorage.getItem('saved-theme');
 const savedIcon = localStorage.getItem('saved-icon');

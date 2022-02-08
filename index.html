@@ -17,7 +17,10 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
   <!--======= CSS =======-->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -61,39 +64,60 @@
   <!--======= HOME SECTION =======-->
   <section id="home" class="home section">
     <div class="container">
-      <h1>Jose Roberto V. Ramos</h1>
-      <div class="txt-type" data-wait="3000" data-words='["Frontend&nbsp;Developer", "Programmer"]'></div>
-      <a href="#contact" class="btn-primary">Hire Me</a>
-      <a href="/docs/jose-ramos-resume-a4.pdf" class="btn-secondary" target="_blank">Resume</a>
+      <h1 data-aos="fade-up" data-aos-delay="150">
+        Jose Roberto V. Ramos
+      </h1>
+      <div class="txt-type" data-wait="3000" data-words='["Frontend&nbsp;Developer", "Programmer"]' data-aos="fade-up"
+        data-aos-delay="300">
+      </div>
+
+      <a href="#contact" class="btn-primary" data-aos="fade-up" data-aos-delay="450">
+        Hire Me
+      </a>
+      <a href="/docs/jose-ramos-resume-a4.pdf" class="btn-secondary" target="_blank" data-aos="fade-up"
+        data-aos-delay="450">
+        Resume
+      </a>
+
       <div class="social-links">
-        <a href="https://www.facebook.com/jobie.ramos/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://github.com/engrjvramos" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/jose-roberto-ramos-7702b1131/" target="_blank"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://codepen.io/engrjvramos" target="_blank"><i class="fab fa-codepen"></i></a>
+        <a href="https://www.facebook.com/jobie.ramos/" target="_blank" data-aos="fade-up" data-aos-delay="900">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://github.com/engrjvramos" target="_blank" data-aos="fade-up" data-aos-delay="1050">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jose-roberto-ramos-7702b1131/" target="_blank" data-aos="fade-up"
+          data-aos-delay="1300">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://codepen.io/engrjvramos" target="_blank" data-aos="fade-up" data-aos-delay="1450">
+          <i class="fab fa-codepen"></i>
+        </a>
       </div>
 
     </div>
     <div id="scroll-down" class="scroll-down">
-      <a href="#about"><span></span>Scroll Down</a>
+      <a href="#about" data-aos="fade-up" data-aos-delay="1600"><span></span>Scroll Down</a>
     </div>
   </section>
 
   <!--======= ABOUT SECTION =======-->
   <section id="about" class="about section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up">
         <h1><span>01</span> About</h1>
-        <h2>something about myself.</h2>
+        <h2>Something about myself.</h2>
       </div>
       <div class="content">
-        <div class="content__about">
+        <div class="content__about" data-aos="fade-up" data-aos-delay="300">
           <h2>Hello, my name is <span>Jose Ramos</span>.</h2>
-          <p>I’m a self-taught web developer & programmer who loves building high quality & responsive websites and web
+          <p>I’m a self-taught web developer & programmer who loves building high quality &
+            responsive websites and web
             apps.
           </p>
 
-          <p>I graduated in 2017 from <a href="https://www.tip.edu.ph/" target="_blank">Technological Institute of
+          <p>I graduated in 2017 from <a href="https://www.tip.edu.ph/" target="_blank">Technological
+              Institute of
               the
               Philippines</a>
             with a
@@ -109,12 +133,15 @@
             positive attitude to
             every challenge.
           </p>
-          <a href="/docs/jose-ramos-resume-a4.pdf" class="btn-primary" target="_blank"><i
-              class="fas fa-file-download"></i>Download CV</a>
+          <a href="/docs/jose-ramos-resume-a4.pdf" class="btn-primary" target="_blank" data-aos="fade-up"
+            data-aos-delay="150">
+            <i class="fas fa-file-download"></i>Download CV
+          </a>
         </div>
-        <div class="content__skills">
+        <div class="content__skills" data-aos="fade-up">
           <h2>Skills</h2>
-          <p>These are the skills, tools & technologies I use to develop projects. I'm currently working on and
+          <p>These are the skills, tools & technologies I use to develop projects. I'm currently
+            working on and
             improving my skills in React and
             familiarizing myself with backend technologies including PHP and SQL.
           </p>
@@ -160,7 +187,7 @@
               <h6>Figma</h6>
             </div>
           </div>
-          <a href="#projects" class="btn-primary"><i class="fas fa-eye"></i>View Projects</a>
+          <a href="#portfolio" class="btn-primary" data-aos="fade-up"><i class="fas fa-eye"></i>View Projects</a>
         </div>
       </div>
     </div>
@@ -169,16 +196,16 @@
   <!--======= PROJECTS SECTION =======-->
   <section id="portfolio" class="projects section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up">
         <h1><span>02</span> Portfolio</h1>
-        <h2>my latest works.</h2>
+        <h2>My latest works.</h2>
       </div>
       <div class="content">
         <div class="project">
-          <div class="project__img">
-            <img src="img/project-1.png" alt="">
+          <div class="project__img" data-aos="fade-right">
+            <img src="img/project-01.png" alt="">
           </div>
-          <div class="project__details">
+          <div class="project__details" data-aos="fade-left">
             <h2>Travel Companion App | TravelEarth</h2>
             <p>Vestibulum mauris lorem, consectetur non nisl maximus, lacinia mollis velit. Ut tristique placerat ex nec
               lacinia. Donec sit amet efficitur diam, ac tincidunt orci. Duis blandit ante ut tellus tempus vestibulum.
@@ -195,7 +222,7 @@
         </div>
 
         <div class="project">
-          <div class="project__details">
+          <div class="project__details" data-aos="fade-right">
             <h2>Travel Companion App | TravelEarth</h2>
             <p>Vestibulum mauris lorem, consectetur non nisl maximus, lacinia mollis velit. Ut tristique placerat ex nec
               lacinia. Donec sit amet efficitur diam, ac tincidunt orci. Duis blandit ante ut tellus tempus vestibulum.
@@ -209,16 +236,16 @@
             <button class="btn-primary"><i class="fas fa-external-link-alt"></i>View Demo</button>
             <button class="btn-secondary"><i class="fab fa-github"></i>View Repo</button>
           </div>
-          <div class="project__img">
+          <div class="project__img" data-aos="fade-left">
             <img src="img/project-1.png" alt="">
           </div>
         </div>
 
         <div class="project">
-          <div class="project__img">
+          <div class="project__img" data-aos="fade-right">
             <img src="img/project-1.png" alt="">
           </div>
-          <div class="project__details">
+          <div class="project__details" data-aos="fade-left">
             <h2>Travel Companion App | TravelEarth</h2>
             <p>Vestibulum mauris lorem, consectetur non nisl maximus, lacinia mollis velit. Ut tristique placerat ex nec
               lacinia. Donec sit amet efficitur diam, ac tincidunt orci. Duis blandit ante ut tellus tempus vestibulum.
@@ -242,12 +269,12 @@
   <!--======= CONTACT SECTION =======-->
   <section id="contact" class="contact section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-up">
         <h1><span>03</span> Contact</h1>
-        <h2>get in touch.</h2>
+        <h2>Get in touch.</h2>
       </div>
       <div class="content">
-        <div class="form-container">
+        <div class="form-container" data-aos="fade-right" data-aos-delay="300">
           <h2>I'd Love to Hear From You</h2>
           <p>I'm always open to discuss any web development work and I'd be glad to help you out. Fill in the form
             below and I’ll try my best to get back to you!</p>
@@ -270,7 +297,7 @@
             </div>
           </form>
         </div>
-        <div class="contact-details">
+        <div class="contact-details" data-aos="fade-left" data-aos-delay="300">
           <h2>Let's Work Together</h2>
           <div class="contact-list">
             <div class="item-title">
@@ -330,12 +357,15 @@
 
   </footer>
 
-
-  <!-- <button class="btn-primary"><i class="fas fa-external-link-alt"></i>View Demo</button>
-  <button class="btn-secondary"><i class="fab fa-github"></i>View Repo</button> -->
-
-  <script src="/script/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+  <script src="script/script.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
 </body>
 
 </html>
