@@ -134,6 +134,10 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+
+	@include respond(mobileS) {
+		font-size: 52.5%;
+	}
 }
 
 body {
@@ -141,6 +145,7 @@ body {
 	font-size: 1.6rem;
 	background: var(--body-bg-color);
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 h1,
@@ -154,11 +159,13 @@ h6 {
 
 h2 {
 	font-weight: 400;
+	line-height: 1.2;
 }
 
 p {
 	line-height: 2;
 	color: var(--neutral-500);
+	text-align: justify;
 }
 
 a {

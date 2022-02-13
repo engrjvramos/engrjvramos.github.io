@@ -5,19 +5,26 @@
 	z-index: 999;
 	border-bottom: 1px solid var(--neutral-100);
 	background: var(--navbar-bg-color);
+	padding: 0 5rem;
+
+	@include respond(tab-port) {
+		padding: 0 2.5rem;
+	}
 
 	.container {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		max-width: 120rem;
-		margin: 0 auto;
+		justify-content: space-between;
 		height: 100%;
-		padding: 0 2.5rem;
+		width: 100%;
 
 		.logo {
 			display: flex;
 			align-items: center;
+
+			@include respond(tab-port) {
+				margin-right: auto;
+			}
 
 			&__icon {
 				font-size: 2.5rem;
@@ -48,6 +55,10 @@
 		}
 
 		.nav-items {
+			@include respond(tab-port) {
+				display: none;
+			}
+
 			a {
 				color: inherit;
 				font-size: 1.7rem;
@@ -93,6 +104,10 @@
 			flex-shrink: 0;
 			color: var(--black-n-white-1);
 
+			@include respond(tab-port) {
+				margin-right: 1rem;
+			}
+
 			&:hover {
 				background: var(--neutral-100);
 			}
@@ -120,6 +135,10 @@
 			width: 4rem;
 			height: 4rem;
 			cursor: pointer;
+
+			@include respond(tab-port) {
+				display: flex;
+			}
 
 			.burger {
 				width: 3rem;
@@ -178,18 +197,17 @@
 .sidebar {
 	position: fixed;
 	width: 30rem;
-	top: 6rem;
+	top: 0;
 	bottom: 0;
-	right: -40rem;
+	right: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background: var(--navbar-bg-color);
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-	visibility: hidden;
-	opacity: 0;
-	z-index: 999999;
+	z-index: 998;
+	transform: translateX(30rem);
 	transition: all 0.3s;
 
 	.nav-items {
@@ -227,8 +245,6 @@
 	}
 
 	&.active {
-		right: 0;
-		visibility: visible;
-		opacity: 1;
+		transform: translateX(0);
 	}
 }

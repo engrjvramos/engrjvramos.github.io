@@ -1,34 +1,35 @@
 .home {
 	@include flexCenter;
-	min-height: 100vh;
 	flex-direction: column;
 	text-align: center;
 	background: var(--black-n-white-2);
-	padding: 0 5rem;
-	width: 100%;
 
 	.container {
-		width: 100%;
-		max-width: 120rem;
-		margin: 0 auto;
-
-		h2 {
+		.txt {
 			font-family: 'Poppins', sans-serif;
+			font-size: 6rem;
+			font-weight: 400;
 			margin-bottom: 6rem;
-			text-transform: lowercase;
-			font-weight: 500;
-			font-size: 10rem;
-			letter-spacing: 5px;
+			text-transform: capitalize;
 		}
 
 		h1 {
-			font-size: 4rem;
-			font-weight: 700;
+			font-size: 5rem;
+			font-weight: 500;
+			line-height: 1.2;
 			color: var(--black-n-white-1);
-			text-transform: uppercase;
-			letter-spacing: 3px;
-			margin-bottom: 5px;
+			text-transform: capitalize;
+			letter-spacing: 1px;
+			margin-bottom: 2rem;
 			position: relative;
+
+			@include respond(tab-land) {
+				font-size: 4.5rem;
+			}
+
+			@include respond(tab-port) {
+				font-size: 4rem;
+			}
 		}
 
 		.txt-type {
@@ -42,30 +43,49 @@
 			}
 		}
 
-		a {
-			display: inline-block;
-			margin-top: 7rem;
-			text-transform: capitalize;
+		.buttons-area {
+			grid-template-columns: 1fr 1fr;
+			max-width: 40rem;
+			margin: 0 auto;
+			padding: 10rem 0 15rem;
+
+			@include respond(mobileS) {
+				grid-template-columns: 1fr;
+				max-width: 100%;
+			}
 		}
 
 		.social-links {
-			font-size: 3rem;
-			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 2.5rem;
+
 			a {
-				color: var(--black);
+				display: block;
+				position: relative;
+				width: 4rem;
+				height: 4rem;
+				border-radius: 50%;
+				background-color: var(--neutral-200);
+
 				&:not(:last-child) {
-					margin-right: 2rem;
+					margin-right: 2.5rem;
+				}
+
+				&:hover {
+					background-color: var(--color-primary);
 				}
 			}
 
 			i {
-				color: var(--black-n-white-1);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: var(--neutral-900);
 				cursor: pointer;
 				transition: all 0.3s;
-
-				&:hover {
-					color: var(--color-primary);
-				}
 			}
 		}
 	}
