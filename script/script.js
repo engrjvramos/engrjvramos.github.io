@@ -102,7 +102,7 @@ TypeWriter.prototype.type = function () {
 
 	this.txtElement.innerHTML = `<span class="txt">${this.txt}<span>`;
 
-	let typeSpeed = 200;
+	let typeSpeed = 100;
 
 	if (this.isDeleting) {
 		typeSpeed /= 2;
@@ -114,13 +114,11 @@ TypeWriter.prototype.type = function () {
 	} else if (this.isDeleting && this.txt === '') {
 		this.isDeleting = false;
 		this.wordIndex++;
-		typeSpeed = 200;
+		typeSpeed = 100;
 	}
 
 	setTimeout(() => this.type(), typeSpeed);
 };
-
-document.addEventListener('DOMContentLoaded', init);
 
 function init() {
 	const txtElement = document.querySelector('.txt-type');
@@ -129,6 +127,29 @@ function init() {
 
 	new TypeWriter(txtElement, words, wait);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+	init();
+
+	const el_autohide = document.querySelector('.autohide');
+
+	if (el_autohide) {
+		let last_scroll_top = 0;
+
+		window.addEventListener('scroll', function () {
+			let scroll_top = window.scrollY;
+			if (scroll_top < last_scroll_top) {
+				el_autohide.classList.remove('scrolled-down');
+				el_autohide.classList.add('scrolled-up');
+			} else {
+				el_autohide.classList.remove('scrolled-up');
+				el_autohide.classList.add('scrolled-down');
+			}
+
+			last_scroll_top = scroll_top;
+		});
+	}
+});
 
 // SCROLL TO TOP BUTTON
 const scrollTopBtn = document.querySelector('.scrollToTop-btn');

@@ -1,0 +1,100 @@
+@mixin btnDefault {
+	font-family: inherit;
+	font-size: 1.6rem;
+	line-height: 1.2;
+	text-align: center;
+	padding: 1.3rem 3.2rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	outline: none;
+	box-shadow: 0 1rem 1rem -0.8rem #d5d5d5;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+
+@keyframes sdb05 {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(-45deg) translate(-20px, 20px);
+		opacity: 0;
+	}
+}
+
+@keyframes shine {
+	from {
+		-webkit-mask-position: 150%;
+	}
+	to {
+		-webkit-mask-position: -50%;
+	}
+}
+
+/* SCREEN SIZES
+mobile <= 480px = 30em;
+tablet (portrait) <= 768px = 48em;
+tablet (landscape) <= 1024px = 64em;
+laptop <= 1600px = 100em;
+desktop > 1600px = 100em;
+*/
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == mobileXS {
+		@media only screen and (max-width: 18.75em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == mobileS {
+		@media only screen and (max-width: 28.125em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == mobile {
+		@media only screen and (max-width: 31.25em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-port {
+		@media only screen and (max-width: 48em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab-land {
+		@media only screen and (max-width: 64em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == laptop {
+		@media only screen and (max-width: 100em) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == desktop {
+		@media only screen and (min-width: 100em) {
+			@content;
+		}
+	}
+}

@@ -2,6 +2,7 @@
 	min-height: 100vh;
 	background: var(--black-n-white-2);
 	padding-top: 10rem;
+	width: 100%;
 
 	.container {
 		@include flexCenter;
@@ -20,7 +21,7 @@
 				align-items: center;
 				flex-wrap: wrap;
 				margin-bottom: 10rem;
-				gap: 5rem;
+				column-gap: 5rem;
 
 				&__img {
 					flex: 1 1 30rem;
@@ -41,7 +42,33 @@
 					flex: 1 1 30rem;
 
 					h2 {
+						font-size: 3.2rem;
 						font-weight: 600;
+					}
+
+					p {
+						margin-bottom: 0.6rem;
+						a {
+							font-weight: 600;
+
+							&:hover {
+								color: var(--color-primary);
+							}
+						}
+					}
+
+					li {
+						// font-size: 1.5rem;
+						color: var(--neutral-500);
+
+						&:not(:last-of-type) {
+							margin-bottom: 0.5rem;
+						}
+
+						i {
+							color: var(--black-n-white-1);
+							margin-right: 0.8rem;
+						}
 					}
 
 					.technologies {

@@ -1,8 +1,9 @@
-@import 'mixins';
-@import 'base';
-@import 'components';
-@import 'header';
-@import 'about';
-@import 'projects';
-@import 'contact';
+@import 'base/mixins';
+@import 'base/base';
+@import 'components/components';
+@import 'components/navbar';
+@import 'sections/home';
+@import 'sections/about';
+@import 'sections/portfolio';
+@import 'sections/contact';
 @import 'mediaqueries';
