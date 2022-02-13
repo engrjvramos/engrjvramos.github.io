@@ -54,7 +54,7 @@
 				}
 
 				.buttons-area {
-					@include respond(mobileS) {
+					@include respond(mobileXS) {
 						grid-template-columns: 1fr;
 						max-width: 100%;
 					}

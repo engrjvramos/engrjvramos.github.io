@@ -69,7 +69,7 @@
 						grid-template-columns: 1fr 1fr;
 					}
 
-					@include respond(mobileS) {
+					@include respond(mobileXS) {
 						grid-template-columns: 1fr;
 					}
 				}
@@ -113,6 +113,12 @@
 								color: var(--neutral-500);
 							}
 						}
+					}
+				}
+
+				.buttons-area {
+					@include respond(mobileXS) {
+						grid-template-columns: 1fr;
 					}
 				}
 			}

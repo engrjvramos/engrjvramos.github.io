@@ -91,7 +91,7 @@
 							grid-template-columns: 1fr 1fr;
 						}
 
-						@include respond(mobileS) {
+						@include respond(mobileXS) {
 							grid-template-columns: 1fr;
 						}
 					}

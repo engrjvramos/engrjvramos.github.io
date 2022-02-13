@@ -131,6 +131,11 @@
 	}
 }
 
+html,
+body {
+	overflow-x: hidden;
+}
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -145,7 +150,7 @@ body {
 	font-size: 1.6rem;
 	background: var(--body-bg-color);
 	min-height: 100vh;
-	overflow-x: hidden;
+	max-width: 100vw;
 }
 
 h1,

@@ -21,15 +21,14 @@ footer {
 				display: flex;
 				align-items: center;
 				font-weight: 500;
+				row-gap: 2rem;
 
 				@include respond(tab-port) {
 					justify-content: center;
 				}
 
-				@include respond(mobileS) {
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					row-gap: 2rem;
+				@include respond(mobileXS) {
+					flex-direction: column;
 				}
 
 				a {
@@ -55,6 +54,10 @@ footer {
 						margin-right: 4rem;
 
 						@include respond(mobileS) {
+							margin-right: 2rem;
+						}
+
+						@include respond(mobileXS) {
 							margin-right: 0;
 						}
 					}

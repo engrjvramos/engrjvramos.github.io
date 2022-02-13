@@ -1,18 +1,14 @@
 .home {
-	@include flexCenter;
-	flex-direction: column;
+	padding-top: 30rem;
 	text-align: center;
 	background: var(--black-n-white-2);
+	position: relative;
+
+	@include respond(mobileXS) {
+		padding-top: 18rem;
+	}
 
 	.container {
-		.txt {
-			font-family: 'Poppins', sans-serif;
-			font-size: 6rem;
-			font-weight: 400;
-			margin-bottom: 6rem;
-			text-transform: capitalize;
-		}
-
 		h1 {
 			font-size: 5rem;
 			font-weight: 500;
@@ -29,6 +25,10 @@
 
 			@include respond(tab-port) {
 				font-size: 4rem;
+			}
+
+			@include respond(mobileS) {
+				font-size: 3.6rem;
 			}
 		}
 
@@ -47,11 +47,12 @@
 			grid-template-columns: 1fr 1fr;
 			max-width: 40rem;
 			margin: 0 auto;
-			padding: 10rem 0 15rem;
+			padding: 5rem 0;
 
-			@include respond(mobileS) {
+			@include respond(mobileXS) {
 				grid-template-columns: 1fr;
 				max-width: 100%;
+				padding: 5rem 0;
 			}
 		}
 
@@ -93,6 +94,8 @@
 	.scroll-down {
 		position: absolute;
 		bottom: 6rem;
+		left: 50%;
+		transform: translateX(-50%);
 		a {
 			padding-top: 7rem;
 			position: relative;

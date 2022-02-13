@@ -1,6 +1,8 @@
 .navbar {
 	position: fixed;
-	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
 	height: 6rem;
 	z-index: 999;
 	border-bottom: 1px solid var(--neutral-100);
@@ -15,8 +17,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 100%;
-		width: 100%;
+		min-height: 100%;
 
 		.logo {
 			display: flex;
@@ -101,7 +102,6 @@
 			border-radius: 50%;
 			cursor: pointer;
 			transition: all 0.3s;
-			flex-shrink: 0;
 			color: var(--black-n-white-1);
 
 			@include respond(tab-port) {
