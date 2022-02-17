@@ -8,6 +8,7 @@
 	border-bottom: 1px solid var(--neutral-100);
 	background: var(--navbar-bg-color);
 	padding: 0 5rem;
+	transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
 
 	@include respond(tab-port) {
 		padding: 0 2.5rem;

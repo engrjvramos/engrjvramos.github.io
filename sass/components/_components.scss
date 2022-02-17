@@ -49,7 +49,7 @@
 
 .buttons-area {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
 	column-gap: 2rem;
 	row-gap: 2rem;
 }
