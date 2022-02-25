@@ -56,26 +56,6 @@
 	--black-n-white-1: #fff;
 	--black-n-white-2: #1b1f23;
 
-	.btn-primary {
-		&:focus {
-			color: #fff;
-		}
-
-		&:active {
-			color: #fff;
-		}
-	}
-
-	.btn-secondary {
-		&:focus {
-			color: #000;
-		}
-
-		&:active {
-			color: #fff;
-		}
-	}
-
 	// MAILTOUI DARK THEME
 	.mailtoui-modal {
 		background-color: rgba(250, 250, 250, 0.5);

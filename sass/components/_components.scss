@@ -67,12 +67,12 @@
 
 	&:hover {
 		background: var(--color-primary);
-		color: var(--black-n-white-2);
+		color: #fff;
 	}
 
 	&:focus {
 		background: var(--color-primary);
-		color: var(--black-n-white-2);
+		color: #fff;
 		box-shadow: var(--btn-focus-box-shadow);
 	}
 
@@ -97,12 +97,12 @@
 	&:hover {
 		background: #545b62;
 		border: 2px solid #4e555b;
-		color: var(--black-n-white-2);
+		color: #fff;
 	}
 
 	&:focus {
 		background: #d5d5d5;
-		color: var(--black-n-white-2);
+		color: #333;
 		box-shadow: 0 0 0 0.3rem rgba(130, 138, 145, 0.5);
 	}
 
@@ -110,6 +110,7 @@
 		background: #d5d5d5;
 		border: 2px solid #d5d5d5;
 		box-shadow: 0 0 0 0.3rem rgba(130, 138, 145, 0.5);
+		color: #333;
 	}
 }
 

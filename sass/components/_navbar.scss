@@ -102,7 +102,7 @@
 			height: 4.5rem;
 			border-radius: 50%;
 			cursor: pointer;
-			transition: all 0.3s;
+			transition: all 0.3s ease;
 			color: var(--black-n-white-1);
 
 			@include respond(tab-port) {

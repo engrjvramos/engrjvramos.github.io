@@ -84,14 +84,15 @@ footer {
 					width: 4rem;
 					height: 4rem;
 					border-radius: 50%;
-					background-color: var(--neutral-200);
 
 					&:not(:last-child) {
 						margin-right: 2.5rem;
 					}
 
 					&:hover {
-						background-color: var(--color-primary);
+						i {
+							color: var(--color-primary);
+						}
 					}
 				}
 
