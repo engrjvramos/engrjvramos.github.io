@@ -19,7 +19,6 @@
 					text-align: center;
 					margin: 0 auto;
 					max-width: 55rem;
-					padding: 2rem 0;
 
 					@include respond(tab-port) {
 						order: -1;
@@ -41,7 +40,7 @@
 					}
 
 					p {
-						margin-bottom: 0.6rem;
+						margin-bottom: 1.6rem;
 						a {
 							font-weight: 600;
 

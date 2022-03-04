@@ -2,9 +2,9 @@
 
 Welcome to my personal portfolio website where I showcase some of the projects I've built in my career as a Frontend Developer.
 
-### Architecture
+## My Process
 
-### Technology
+### Built with
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 
@@ -23,3 +23,4 @@ Welcome to my personal portfolio website where I showcase some of the projects I
 | :----------- | :------------ | :------------------------ |
 | Font Awesome | Icon elements | https://fontawesome.com/  |
 | Google Fonts | Font family   | https://fonts.google.com/ |
+| Figma        | UI/UX design  | https://figma.com/        |
