@@ -1,6 +1,6 @@
 # Jose Roberto V. Ramos | Portfolio Website
 
-Welcome to my personal portfolio website where I showcase some of the projects I've built in my career as a Frontend Developer.
+Welcome to my personal portfolio website where I showcase some of the projects I've built in my career as a Web Developer.
 
 ## My Process
 
